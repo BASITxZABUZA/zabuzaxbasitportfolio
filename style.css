@@ -241,7 +241,7 @@ main {
   color: #66fcf1;
 }
 .card p {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   justify-content: center;
   padding: 2rem 0rem;
   text-align: center;
@@ -258,6 +258,9 @@ main {
   .middle h2 {
     font-size: 2.5rem;
   }
+  .card p{
+    font-size: 1.3rem;
+  }
 }
 @media screen and (max-width: 568px) {
   .middle h2 {
@@ -266,4 +269,55 @@ main {
 }
 /* middle section ends here  */
 
-/* project section starts here  */
+/* workflow section starts here  */
+
+.workflow{
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #45a29e45;
+}
+.workflow h4{
+  font-size: 5rem;
+  padding-top: 6rem;
+  color: #66fcf1;
+  text-shadow: #0b0c10 3px 3px 4px;
+  text-align: center;
+}
+.projects{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.projectcard{
+  background-color: #1f2833;
+  height:40vh;
+  width: 40vh;
+  margin: 5rem;
+  box-shadow: #1f2833 4px 4px 10px;
+}
+.projectcard h5{
+  padding: 2rem;
+  background-color: #45a29e;
+  text-align: center;
+  text-transform: uppercase;
+}
+.projectcard p{
+  color: #c5c6c7;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding: 2rem;
+  text-align: center;
+}
+.projectcard li{
+  background-color: #45a29e;
+  text-align: center;
+  margin: 4rem;
+}
+.projectcard a{
+  font-size: 3rem;
+  color: #1f2833;
+}
+.coming-soon{
+        margin-top: 20rem;
+}
