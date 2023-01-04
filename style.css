@@ -71,7 +71,7 @@ nav ul li a {
   text-transform: uppercase;
 }
 nav ul li:hover {
-  transform: scale(1.4);
+  transform: scale(1.5);
   transition: all 1s ease-in-out;
 }
 nav h1 {
@@ -101,7 +101,7 @@ nav h1 {
   }
   nav ul {
     flex-direction: column;
-    font-size: 1rem;
+    font-size: 2rem;
   }
   nav h1 {
     display: flex;
@@ -191,7 +191,7 @@ main {
     padding-bottom: 4rem;
   }
   .left-side-of-main p{
-    font-size:1.7rem;
+    font-size:1.5rem;
   }
 }
 @media screen and (max-width:390px) {
