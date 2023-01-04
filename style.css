@@ -9,6 +9,7 @@ html {
 }
 body {
   background: url(/images/background.png);
+  /* background-color: #0b0c10; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -123,6 +124,7 @@ nav h1 {
 main {
   display: flex;
   flex: 1 1 20rem;
+  justify-content: center;
 }
 .left-side-of-main {
   display: flex;
@@ -274,7 +276,7 @@ main {
 .workflow{
   min-height: 100vh;
   width: 100vw;
-  background-color: #45a29e45;
+  /* background-color: #45a29e45; */
 }
 .workflow h4{
   font-size: 5rem;
@@ -319,5 +321,5 @@ main {
   color: #1f2833;
 }
 .coming-soon{
-        margin-top: 20rem;
+        margin:10rem 3rem;
 }
