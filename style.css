@@ -1,0 +1,269 @@
+/* global styling begins */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: url(/images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "poppins", sans-serif;
+}
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #66fcf1;
+}
+
+li {
+  list-style-type: none;
+}
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 3.5rem;
+}
+h4 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 2.3rem;
+}
+/* global styling ends here  */
+
+/* navbar starts from here */
+nav {
+  background-color: #1f2833;
+  min-height: 10vh;
+  display: flex;
+  min-width: 100vw;
+}
+nav .s {
+  color: #c5c6c7;
+}
+nav .s2 {
+  color: #45a29e;
+}
+nav .s3 {
+  color: #c5c6c7;
+}
+ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+  flex: 1 1 20rem;
+}
+nav ul li a {
+  text-transform: uppercase;
+}
+nav ul li:hover {
+  transform: scale(1.4);
+  transition: all 1s ease-in-out;
+}
+nav h1 {
+  flex-grow: 0.5;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+@media screen and (max-width: 779px) {
+  nav {
+    flex-direction: column;
+    height: 20vh;
+  }
+  nav h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 430px) {
+  nav {
+    flex-direction: column;
+    height: 40vh;
+  }
+  nav ul {
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  nav h1 {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 237px) {
+  nav ul {
+    font-size: 1.1rem;
+  }
+  nav h1 {
+    font-size: 2rem;
+  }
+}
+/* navbar ends here! *
+
+/* main section starts from her */
+main {
+  display: flex;
+  flex: 1 1 20rem;
+}
+.left-side-of-main {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  width: 40vw;
+  padding-top: 7rem;
+  border: 3px solid #66fcf1;
+  margin-top: 3rem;
+  margin-left: 1rem;
+  flex-shrink: 1;
+}
+.left-side-of-main h2 {
+  text-transform: uppercase;
+  text-shadow: 3px 3px 30px #66fcf1;
+  padding: 1rem;
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  color: #66fcf1;
+}
+.left-side-of-main p {
+  text-transform: capitalize;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-top: 3rem;
+  color: #c5c6c7;
+}
+.left-side-of-main h4 {
+  text-shadow: 3px 3px 30px #33b9f8;
+  padding-top: 6rem;
+  text-align: center;
+  color: #5ff1d0;
+  font-size: 3rem;
+}
+.right-side-of-main {
+  height: 90vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.right-side-of-main img {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #66fcf1;
+}
+.right-side-of-main img:hover{
+  transform: scale(1.1);
+  transition: all 2s ease-in;
+}
+@media screen and (max-width:861px) {
+  main{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-side-of-main{
+    width: 70vw;
+    padding-bottom: 4rem;
+  }
+  .left-side-of-main p{
+    font-size:1.7rem;
+  }
+}
+@media screen and (max-width:390px) {
+  .right-side-of-main img 
+  {
+    width: 300px;
+    height: 300px;
+  }
+  .left-side-of-main p{
+    font-size: 1.3rem;
+  }
+}
+
+/* main section ended here */
+
+/* middle part starts here  */
+.middle {
+  min-height: 100vh;
+}
+.middle h2 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 10rem;
+  color: #66fcf1;
+  text-shadow: #33b9f8 3px 3px 20px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  border: 2px solid white;
+  background-color: #45a29e;
+  min-height: 35rem;
+  width: 30rem;
+  margin: 2rem;
+}
+.card h5 {
+  background-color: #1f2833;
+  padding: 3rem 0;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 5rem;
+  color: #66fcf1;
+}
+.card p {
+  font-size: 1.7rem;
+  justify-content: center;
+  padding: 2rem 0rem;
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+}
+.card:hover {
+  background-color: #0b0c10;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 1s ease;
+}
+@media screen and (max-width: 568px) {
+  .middle h2 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 568px) {
+  .middle h2 {
+    font-size: 3rem;
+  }
+}
+/* middle section ends here  */
+
+/* project section starts here  */
