@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+.domb {
+  /* background-color: rgb(36, 36, 36); */
+  height: 100vh;
+  width: 100vw;
+  background: url("https://media1.popsugar-assets.com/files/thumbor/-Hw_8s42nZxSC65rDGpzyMzA_cA/0x600:2401x3001/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2022/01/04/686/n/1922507/6023a31161d467cac500f9.25034761_/i/how-to-do-planet-iphone-wallpaper-trend-tiktok.jpg");
+  background-position: left;
+}
+.cal {
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    ". . . hundred "
+    "c pm per div"
+    "seven eight nine mul"
+    "four five six min"
+    "one two three plus"
+    "zero zero dot equal";
+  grid-gap: 2px;
+  height: 64vh;
+  width: 22vw;
+  margin: auto;
+  margin-top: 2vh;
+  margin-right: 75%;
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px solid white;
+  box-shadow: -1px -1px 20px #ff9500;
+}
+button{
+  font-size: 1rem !important;
+}
+.keys {
+  background-color: #1c1c1c;
+  color: white;
+  border-radius: 180px;
+  /* border: 1px solid white; */
+  text-align: center;
+  font-size: 20px;
+  margin: 2px;
+  cursor: pointer;
+  padding: 1rem;
+}
+.keyhundred {
+  grid-area: hundred;
+  color: white;
+  margin: auto;
+  font-size: 50px;
+}
+.keyc {
+  grid-area: c;
+  background-color: #d4d4d2;
+}
+.keypm {
+  grid-area: pm;
+  background-color: #d4d4d2;
+}
+.keyper {
+  grid-area: per;
+  background-color: #d4d4d2;
+}
+.keydiv {
+  grid-area: div;
+  background-color: #ff9500;
+}
+.keymul {
+  grid-area: mul;
+  background-color: #ff9500;
+}
+.keymin {
+  grid-area: min;
+  background-color: #ff9500;
+}
+.keyplus {
+  grid-area: plus;
+  background-color: #ff9500;
+}
+.keyequal {
+  grid-area: equal;
+  background-color: #ff9500;
+}
+.keydot {
+  grid-area: dot;
+  background-color: #505050;
+}
+.keyone {
+  grid-area: one;
+  background-color: #505050;
+}
+.keytwo {
+  grid-area: two;
+  background-color: #505050;
+}
+.keythree {
+  grid-area: three;
+  background-color: #505050;
+}
+.keyfour {
+  grid-area: four;
+  background-color: #505050;
+}
+.keyfive {
+  grid-area: five;
+  background-color: #505050;
+}
+.keysix {
+  grid-area: six;
+  background-color: #505050;
+}
+.keyseven {
+  grid-area: seven;
+  background-color: #505050;
+}
+.keyeight {
+  grid-area: eight;
+  background-color: #505050;
+}
+.keynine {
+  grid-area: nine;
+  background-color: #505050;
+}
+.keyzero {
+  grid-area: zero;
+  background-color: #505050;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  color: white;
+  text-transform: uppercase;
+  margin: 15px;
+  font-size: 50px;
+  font-family: Franklin Gothic Medium;
+  text-shadow: 3px 3px 7px #ff9500;
+}
+.heading2 {
+  color: rgb(7, 255, 226);
+  text-transform: capitalize;
+  margin: 15px;
+  font-size: 40px;
+  font-family: Calibri;
+  text-shadow: 3px 3px 7px;
+}
+.credits {
+  color: #ff9500;
+  text-transform: capitalize;
+  margin: 15px;
+  margin-left: 18px;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px;
+  font-family: cursive;
+}
+

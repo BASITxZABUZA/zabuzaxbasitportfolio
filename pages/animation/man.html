@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>icons</title>
+  </head>
+  <body>
+    <div class="domb">
+      <img class="man" src="/pages/animation/logo/man.png" alt="" />
+      <img class="html" src="/pages/animation/logo/html.png" alt="" />
+      <img class="css" src="/pages/animation/logo/css.png" alt="" />
+      <img class="bs" src="/pages/animation/logo/bs.png" alt="" />
+      <img class="java" src="/pages/animation/logo/java.png" alt="" />
+      <!-- <img class="node" src="/logo/node.png" alt="" /> -->
+      <!-- <img class="phy" src="/logo/phy.png" alt="" /> -->
+    </div>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .domb {
+        height: 100vh;
+        background-color: aquamarine;
+        position: relative;
+      }
+      .man {
+        position: absolute;
+        top: 30vh;
+        left: 42vw;
+        height: 40vh;
+      }
+      .html {
+        position: absolute;
+        top: 47vh;
+        left: 46vw;
+        height: 10%;
+        animation-name: html;
+        animation-iteration-count: infinite;
+        animation-duration: 10000ms;
+        animation-direction: normal;
+        animation-timing-function: linear;
+      }
+      @keyframes html {
+        from {
+          transform: rotate(0deg) translateY(-40vh) rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg) translateY(-40vh) rotate(-360deg);
+        }
+      }
+      .css {
+        position: absolute;
+        top: 47vh;
+        left: 47vw;
+        height: 10%;
+        animation-name: css;
+        animation-iteration-count: infinite;
+        animation-duration: 10000ms;
+        animation-direction: normal;
+        animation-timing-function: linear;
+      }
+      @keyframes css {
+        from{
+            
+            transform:
+            rotate(0deg) 
+            translate(19vw)
+            rotate(0deg);
+        }
+        to{ 
+          transform:
+            rotate(360deg) 
+            translate(19vw)
+            rotate(-360deg);
+        }
+      }
+      .bs {
+        position: absolute;
+        top: 49vh;
+        left: 46vw;
+        height: 8%;
+        animation-name: bs;
+        animation-iteration-count: infinite;
+        animation-duration: 10000ms;
+        animation-direction: normal;
+        animation-timing-function: linear;
+      }
+    @keyframes bs {
+      from{
+            
+            transform:
+            rotate(0deg) 
+            translate(-19vw)
+            rotate(0deg);
+        }
+        to{ 
+          transform:
+            rotate(360deg) 
+            translate(-19vw)
+            rotate(-360deg);
+        }
+      }
+      .java {
+        position: absolute;
+        top: 48vh;
+        left: 46vw;
+        height: 9%;
+        animation-name: java;
+        animation-iteration-count: infinite;
+        animation-duration: 10000ms;
+        animation-direction: normal;
+        animation-timing-function: linear;
+      }
+      @keyframes java {
+        from {
+          transform: rotate(0deg) translateY(40vh) rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg) translateY(40vh) rotate(-360deg);
+        }
+      }
+
+      .node {
+        position: absolute;
+        top: 49vh;
+        left: 47vw;
+        height: 7%;
+        animation-name: node;
+        animation-iteration-count: infinite;
+        animation-duration: 10000ms;
+        animation-direction: normal;
+        animation-timing-function: linear;
+      }
+      /* @keyframes node {
+        from{
+            
+            transform:
+            rotate(0deg) 
+            translate(17vw)
+
+            rotate(0deg);
+        }
+        to{ 
+          transform:
+            rotate(360deg) 
+            translate(17vw)
+            rotate(-360deg);
+        }
+      } */
+      .phy {
+        position: absolute;
+        top: 49vh;
+        left: 47vw;
+        height: 7%;
+        animation-name: phy;
+        animation-iteration-count: infinite;
+        animation-duration: 10000ms;
+        animation-direction: normal;
+        animation-timing-function: linear;
+      }
+    </style>
+  </body>
+</html>

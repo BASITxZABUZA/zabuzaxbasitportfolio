@@ -1,0 +1,328 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body {
+  background: #000000;
+  overflow-x: hidden;
+  background: url("/pages/portfolio/background.jpg") no-repeat;
+  background-size: 100vw 200vh;
+  /* background-size: cover; */
+}
+.navbar {
+  background-color: #0b5754;
+  padding: 1.7rem;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+}
+.btns {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.btns a{
+  flex-wrap: 1 1 1;
+}
+a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #00fff6;
+  font-size: 1.8rem;
+  text-shadow: 0px 0px 40px #00a9e2;
+}
+.searchbox {
+  height: 35px;
+}
+.left {
+  display: flex;
+  border: 3px solid #00a9e2;
+  padding: 1.5rem;
+  position: absolute;
+  top: 25vh;
+  left: 10%;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  height: 70vh;
+  width: 25vw;
+  text-shadow: 0px 0px 40px #00a9e2;
+  text-align: center;
+}
+.zabuza {
+  position: absolute;
+  top: 3vh;
+  left: 6vw;
+  display: flex;
+  flex-direction: row;
+  font-family: "Roboto", sans-serif;
+  color: #00fff6;
+  font-size: 4rem;
+  text-transform: uppercase;
+  animation: title 4s ease-in-out infinite alternate;
+}
+@keyframes title {
+  0% {
+    left: 6vw;
+  }
+  50% {
+    left: 2vw;
+  }
+  100% {
+    left: 10vw;
+  }
+}
+h2 {
+  position: absolute;
+  padding-top: 15vh;
+  font-size: 2.2rem;
+  color: #5ff1d0;
+  left: 3.5vw;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  text-align: center;
+}
+p {
+  position: absolute;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+  text-transform: capitalize;
+  top: 31vh;
+  padding: 20px;
+  color: aqua;
+  padding-left: 3px;
+  padding-top: 7px;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 25vh;
+  left: 50%;
+  height: 500px;
+  /* border: 4px solid rgb(237, 141, 237); */
+  border: 3px solid #00a9e2;
+  animation: basit 6s infinite alternate ease-in-out;
+}
+@keyframes basit {
+  0% {
+    left: 50%;
+  }
+  50% {
+    left: 40%;
+  }
+  100% {
+    left: 60%;
+  }
+}
+h4 {
+  text-decoration: underline;
+  padding-bottom: 20px;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  font-family: "Roboto", sans-serif;
+  color: #00fff6;
+  font-size: 3rem;
+  text-transform: uppercase;
+  /* justify-content: center; */
+  padding: 3rem;
+  /* animation: heading 6s infinite alternate ease-in-out; */
+}
+.more {
+  height: 50vh;
+  margin: 7rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 90vh;
+  border: 3px solid #5ff1d0;
+  text-shadow: 0px 0px 40px #00a9e2;
+}
+input[type="text"] {
+  background-color: #00fff7;
+  text-transform: uppercase;
+  border: 5px solid #0b5754;
+  padding: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.l {
+  text-shadow: 0px 0px 40px #00a9e2;
+  color: aqua;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "html css"
+    "c cpp";
+  gap: 26px;
+  list-style: none;
+  position: absolute;
+  font-size: 3rem;
+  top: 20vh;
+  text-transform: uppercase;
+  padding: 1rem;
+  border: 3px solid #00fff6;
+  text-align: center;
+  animation: language 6s infinite alternate ease-in-out;
+}
+@keyframes language {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+.lan1 {
+  grid-area: html;
+}
+.lan2 {
+  grid-area: css;
+}
+.lan3 {
+  grid-area: c;
+}
+.lan4 {
+  grid-area: cpp;
+}
+.foot {
+  background-color: #0b5754;
+  position: relative;
+  top: 100vh;
+  height: 70vh;
+  width: 98.8vw;
+  border: 3px solid #5ff1d0;
+}
+.z {
+  top: 3vh;
+  left: 68vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: "Roboto", sans-serif;
+  color: #00fff6;
+  font-size: 3rem;
+  text-shadow: 0px 0px 40px #00a9e2;
+}
+.socials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "in tw"
+    "fb wa";
+  justify-items: center;
+  align-items: center;
+  position: absolute;
+  height: 30vh;
+  width: 30vw;
+  bottom: 5vh;
+  top: 17vh;
+  gap: 16px;
+  left: 60vw;
+  border: 4px solid #00fff6;
+  padding: 20px;
+  text-shadow: 0px 0px 40px #27c0f3;
+}
+.foot div h1 {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 6vh;
+  right: 18%;
+  border: 3px solid #00fff7;
+  padding: 0.5rem;
+}
+
+a {
+  padding: 1px;
+  margin: 0.5rem;
+}
+span {
+  color: rgb(109, 255, 218);
+  text-transform: uppercase;
+  padding-left: 7px;
+}
+.me {
+  position: absolute;
+  display: flex;
+  color: #00fff7;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-family: sans-serif;
+  font-size: 2rem;
+  top: 4vh;
+  left: 2.8vw;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10vh;
+  left: 2vw;
+  /* width: 50vh; */
+}
+input[type="email"] {
+  background-color: #00fff7;
+  text-transform: uppercase;
+  border: 5px solid #0b5754;
+  padding: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  width: 50vw;
+}
+textarea {
+  background-color: #00fff7;
+  text-transform: uppercase;
+  border: 5px solid #0b5754;
+  padding: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  height: 22vh;
+}
+.copyright {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  color: antiquewhite;
+  font-size: 1.6rem;
+  width: 98.5vw;
+  top: 60vh;
+}
+.in {
+  grid-area: in;
+}
+.tw {
+  grid-area: tw;
+}
+.fb {
+  grid-area: fb;
+}
+.wa {
+  grid-area: wa;
+}
+.boddy{
+  display: flex;
+}
+/* @media screen and (max-width:620px) {
+  html{
+    font-size: 82%;
+  }
+  .boddy{
+    flex-direction: column;
+  }
+} */
