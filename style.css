@@ -132,44 +132,41 @@ main {
 .left-side-of-main {
   display: flex;
   flex-direction: column;
-  min-height: 80vh;
+  min-height: 60vh;
   width: 40vw;
-  padding-top: 7rem;
+  padding-top: 1rem;
   border: 3px solid #66fcf1;
-  margin-top: 3rem;
+  margin-top: 10rem;
   margin-left: 1rem;
-  flex-shrink: 1;
 }
 .left-side-of-main h2 {
   text-transform: uppercase;
   text-shadow: 3px 3px 30px #66fcf1;
   padding: 1rem;
-  justify-content: center;
-  text-align: center;
   font-size: 3rem;
   color: #66fcf1;
+  text-align: center;
 }
 .left-side-of-main p {
   text-transform: capitalize;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding-left: 1rem;
-  padding-top: 3rem;
+  padding-top: 2rem;
   color: #c5c6c7;
 }
 .left-side-of-main article {
-  text-transform: capitalize;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding-left: 1rem;
-  padding-top: 3rem;
+  padding-top: 2rem;
   color: #c5c6c7;
 }
 .left-side-of-main h4 {
   text-shadow: 3px 3px 30px #33b9f8;
-  padding-top: 6rem;
+  padding-top: 3rem;
   text-align: center;
   color: #5ff1d0;
   font-size: 3rem;
@@ -180,7 +177,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .right-side-of-main img {
   height: 400px;
@@ -207,6 +203,12 @@ main {
   .left-side-of-main p{
     font-size:1.5rem;
   }
+  .left-side-of-main article{
+    font-size:1.5rem;
+  }
+  .right-side-of-main{
+    height: 60vh;
+  }
 }
 @media screen and (max-width:390px) {
   .right-side-of-main img 
@@ -215,6 +217,9 @@ main {
     height: 300px;
   }
   .left-side-of-main p{
+    font-size: 1.3rem;
+  }
+  .left-side-of-main article{
     font-size: 1.3rem;
   }
 }
@@ -309,9 +314,9 @@ main {
 }
 .projectcard{
   background-color: #1f2833;
-  min-height:45vh;
-  margin: 5rem;
+  min-height:40vh;
   width: 40vh;
+  margin: 5rem;
   box-shadow: #45a29e -1px 1px 19px;
 }
 .projectcard h5{
