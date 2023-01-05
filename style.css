@@ -207,7 +207,12 @@ main {
     font-size:1.5rem;
   }
   .right-side-of-main{
-    height: 60vh;
+    height: 70vh;
+  }
+  .right-side-of-main img 
+  {
+    width: 400px;
+    height: 400px;
   }
 }
 @media screen and (max-width:390px) {
@@ -359,7 +364,7 @@ main {
 .projectcard span{
   text-transform: uppercase;
   text-decoration: underline;
-  color: #66fcf1;
+  color:#66fcf1;
 }
 /* workflow ends here */
 
