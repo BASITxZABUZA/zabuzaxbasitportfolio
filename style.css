@@ -8,11 +8,10 @@ html {
   font-size: 62.5%;
 }
 body {
-  background: url(/images/background.png);
-  /* background-color: #0b0c10; */
+  /* background: url(/images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   font-family: "poppins", sans-serif;
 }
 a {
@@ -124,7 +123,11 @@ nav h1 {
 main {
   display: flex;
   flex: 1 1 20rem;
+  min-height: 90vh;
   justify-content: center;
+  background: url(/images/background.png);
+  background-size: 200vh;
+  background-position: center;  
 }
 .left-side-of-main {
   display: flex;
@@ -147,6 +150,15 @@ main {
   color: #66fcf1;
 }
 .left-side-of-main p {
+  text-transform: capitalize;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-top: 3rem;
+  color: #c5c6c7;
+}
+.left-side-of-main article {
   text-transform: capitalize;
   justify-content: center;
   align-items: center;
@@ -212,12 +224,15 @@ main {
 /* middle part starts here  */
 .middle {
   min-height: 100vh;
+  background: url(/images/background2.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .middle h2 {
   text-transform: uppercase;
   font-size: 4rem;
   text-align: center;
-  padding-top: 10rem;
+  padding-top: 5rem;
   color: #66fcf1;
   text-shadow: #33b9f8 3px 3px 20px;
 }
@@ -276,13 +291,14 @@ main {
 .workflow{
   min-height: 100vh;
   width: 100vw;
-  /* background-color: #45a29e45; */
+  background: url(/images/umberto-FewHpO4VC9Y-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .workflow h4{
   font-size: 5rem;
   padding-top: 6rem;
   color: #66fcf1;
-  text-shadow: #0b0c10 3px 3px 4px;
   text-align: center;
 }
 .projects{
@@ -293,10 +309,10 @@ main {
 }
 .projectcard{
   background-color: #1f2833;
-  height:40vh;
-  width: 40vh;
+  min-height:45vh;
   margin: 5rem;
-  box-shadow: #1f2833 4px 4px 10px;
+  width: 40vh;
+  box-shadow: #45a29e -1px 1px 19px;
 }
 .projectcard h5{
   padding: 2rem;
@@ -310,11 +326,11 @@ main {
   text-transform: capitalize;
   padding: 2rem;
   text-align: center;
+  margin-bottom: 7rem;
 }
-.projectcard li{
+.projectcard button{
   background-color: #45a29e;
-  text-align: center;
-  margin: 4rem;
+  height: 4rem;
 }
 .projectcard a{
   font-size: 3rem;
@@ -322,4 +338,30 @@ main {
 }
 .coming-soon{
         margin:10rem 3rem;
+}
+.projectcard  div button{
+  width: 15rem;
+  padding: .1rem;
+  border-radius: 9rem;
+  box-shadow: #45a29e -1px 1px 5px;
+  border: none;
+}
+.projectcard div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* workflow ends here */
+
+/*footer starts from here*/
+
+footer{
+  min-height: 5vh;
+  background-color: #1f2833;
+}
+h6{
+  color: #66fcf1;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: lowercase;
 }
