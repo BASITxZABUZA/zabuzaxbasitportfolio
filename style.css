@@ -331,7 +331,7 @@ main {
   text-transform: capitalize;
   padding: 2rem;
   text-align: center;
-  margin-bottom: 7rem;
+  margin-bottom: 2rem;
 }
 .projectcard button{
   background-color: #45a29e;
@@ -355,6 +355,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.projectcard span{
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #66fcf1;
 }
 /* workflow ends here */
 
