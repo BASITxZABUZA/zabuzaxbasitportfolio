@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="foot">
+      <form action="https://formspree.io/f/mdovodvr" method="POST">
+        <div class="name">
+          <label for="">name</label>
+          <input type="text" name="message" id="" />
+        </div>
+        <div class="email">
+          <label for="">email</label>
+          <input type="text" name="email" id="" />
+          <textarea name="message"></textarea>
+
+        </div>
+        <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+        <button>login</button>
+      </form>
+    </div>
+    <style>
+      textarea {
+        resize: none;
+      }
+      .foot {
+        min-height: 100vh;
+        background-color: lightgoldenrodyellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        width: 50%;
+        margin: auto;
+        min-height: 50vh;
+      }
+      input {
+        margin: 2rem;
+        /* background: purple;   */
+      }
+      textarea {
+        padding: 2rem;
+      }
+      button {
+        padding: 1rem 5rem;
+        background: cyan;
+        border: none;
+      }
+    </style>
+  </body>
+</html>
