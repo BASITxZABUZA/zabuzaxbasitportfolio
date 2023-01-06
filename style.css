@@ -381,6 +381,28 @@ footer {
   background-color: #1f2833;
   min-height: 80vh;
 }
+footer div h5{
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 3rem;
+  color: #66fcf1;
+}
+.socials{ 
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .socials ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .socials ul li{
+  padding:3rem;
+}
 form {
   display: flex;
   flex-direction: column;
@@ -425,7 +447,8 @@ textarea {
 }
 form button {
   padding: 1rem 5rem;
-  background: cyan;
+  background: #45a29e;
+  box-shadow: black -1px 1px 13px;
   border: none;
   width: 15rem;
   border-radius: 7px;
