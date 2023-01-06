@@ -322,6 +322,7 @@ main {
   width: 40vh;
   margin: 5rem;
   box-shadow: #45a29e -1px 1px 19px;
+  border:solid white 3px;
 }
 .projectcard h5{
   padding: 2rem;
