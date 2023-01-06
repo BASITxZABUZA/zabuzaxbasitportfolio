@@ -332,12 +332,15 @@ main {
   width: 40vh;
   margin: 5rem;
   box-shadow: #45a29e -1px 1px 19px;
+  border-radius: 20px;
 }
 .projectcard h5{
   padding: 2rem;
   background-color: #45a29e;
   text-align: center;
   text-transform: uppercase;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .projectcard p{
   color: #c5c6c7;
