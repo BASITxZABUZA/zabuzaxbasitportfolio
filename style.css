@@ -317,6 +317,8 @@ main {
   padding-top: 6rem;
   color: #66fcf1;
   text-align: center;
+  text-shadow: #33b9f8 3px 3px 20px;
+  
 }
 .projects{
   display: flex;
