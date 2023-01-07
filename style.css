@@ -52,7 +52,7 @@ nav .s {
   color: #c5c6c7;
 }
 nav .s2 {
-  color: #45a29e;
+  color: white;
 }
 nav .s3 {
   color: #c5c6c7;
@@ -67,10 +67,6 @@ ul {
 }
 nav ul li a {
   text-transform: uppercase;
-}
-nav ul li:hover {
-  transform: scale(1.5);
-  transition: all 1s ease-in-out;
 }
 nav h1 {
   flex-grow: 0.5;
@@ -193,10 +189,6 @@ main {
   align-items: center;
   border: 3px solid #66fcf1;
 }
-.right-side-of-main img:hover {
-  transform: scale(1.1);
-  transition: all 2s ease-in;
-}
 @media screen and (max-width: 861px) {
   main {
     flex-direction: column-reverse;
@@ -273,7 +265,7 @@ main {
   color: #66fcf1;
 }
 .card p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   justify-content: center;
   padding: 2rem 0rem;
   text-align: center;
@@ -291,7 +283,7 @@ main {
     font-size: 2.5rem;
   }
   .card p {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
   }
 }
 @media screen and (max-width: 568px) {
@@ -328,12 +320,13 @@ main {
   min-height: 40vh;
   width: 40vh;
   margin: 5rem;
-  box-shadow: #45a29e -1px 1px 19px;
+  border: #c5c6c7 2px solid;
+  /* box-shadow: #45a29e -1px 1px 19px; */
   border-radius: 20px;
 }
 .projectcard h5 {
   padding: 2rem;
-  background-color: #45a29e;
+  background-color: #66fcf1;
   text-align: center;
   text-transform: uppercase;
   border-top-left-radius: 20px;
@@ -345,24 +338,26 @@ main {
   text-transform: capitalize;
   text-align: center;
   margin-bottom: 2rem;
+  padding: 1rem;
 }
 .projectcard button {
-  background-color: #45a29e;
-  height: 4rem;
+  background-color: #66fcf1;
+  margin: 1rem;
+  height: 5rem;
 }
 .projectcard a {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #1f2833;
+  font-family: 'Times New Roman', Times, serif;
 }
 .coming-soon {
   margin: 10rem 3rem;
 }
 .projectcard div button {
+  height: 4rem;
   width: 15rem;
-  padding: 0.1rem;
   border-radius: 9rem;
-  box-shadow: #45a29e -1px 1px 5px;
-  border: none;
+  border: #1f2833 solid 3px;
 }
 .projectcard div {
   display: flex;
@@ -372,7 +367,7 @@ main {
 .projectcard span {
   text-transform: uppercase;
   text-decoration: underline;
-  color: #66fcf1;
+  color: #5ff1d0;
 }
 /* workflow ends here */
 
@@ -381,27 +376,27 @@ footer {
   background-color: #1f2833;
   min-height: 80vh;
 }
-footer div h5{
+footer div h5 {
   text-transform: uppercase;
   font-size: 2rem;
   padding: 3rem;
   color: #66fcf1;
 }
-.socials{ 
+.socials {
   height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-footer .socials ul{
+footer .socials ul {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-footer .socials ul li{
-  padding:3rem;
+footer .socials ul li {
+  padding: 1.5rem;
 }
 form {
   display: flex;
@@ -411,9 +406,9 @@ form {
   min-height: 40rem;
   width: 40%;
   margin: auto;
-  border: #5ff1d0 solid 3px ;
+  border: #5ff1d0 solid 3px;
 }
-footer h6{
+footer h6 {
   text-transform: uppercase;
   font-size: 3.5rem;
   padding: 3rem;
@@ -423,7 +418,7 @@ textarea {
   margin: 1rem;
   resize: none;
   border-radius: 6px;
-  text-align: center;   
+  text-align: center;
 }
 input {
   padding: 1.5rem;
@@ -439,21 +434,30 @@ label {
   color: #66fcf1;
 }
 textarea {
-  padding: 2rem;
+  padding: 4rem;
   background-color: #66fcf1;
   border: none;
   width: 30rem;
   height: 20vh;
+  overflow: hidden;
+}
+::placeholder {
+  color: #1f2833;
+  font-size: 1.8rem;
 }
 form button {
-  padding: 1rem 5rem;
-  background: #45a29e;
-  box-shadow: black -1px 1px 13px;
+  padding: 1rem 3rem;
+  background: #66fcf1;
   border: none;
   width: 15rem;
   border-radius: 7px;
-
+  font-size: 2rem;
+  cursor: pointer;
+  margin-top: .5rem;
 }
+  form button ::hover{
+    font-size: 1rem;
+  }
 h6 {
   color: #66fcf1;
   font-size: 1.5rem;
@@ -461,31 +465,47 @@ h6 {
   text-align: center;
   text-transform: lowercase;
 }
-@media screen and (max-width:810px){
-  form{
-    width: 60%;
-  }  
+i {
+  font-size: 1rem;
+  /* padding: 1rem; */
 }
-@media screen and (max-width:560px) {
- form{
-  width: 80%;
- }
-}
-@media screen and (max-width:421px) {
-  form{
-   width: 90%;
-  }
- }
- @media screen and (max-width:421px) {
- input{
-  width: 20rem;
- }
- textarea{
-  width: 20rem;
- }
- }
- .copyright h6{
+.copyright h6 {
   color: #66fcf1;
   font-size: 1.5rem;
   text-align: center;
- }
+}
+@media screen and (max-width: 810px) {
+  form {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 560px) {
+  form {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 421px) {
+  form {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 421px) {
+  input {
+    width: 20rem;
+  }
+  textarea {
+    width: 20rem;
+  }
+}
+/* HOVER EFFECTS STARTS */
+nav ul li a:hover {
+  box-shadow: inset 120px 0 0 0 #66fcf1;
+  color: #0b0c10;
+  transform: scale(1.1);
+  word-spacing: 9px;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.right-side-of-main img:hover {
+  transform: rotate(40deg);
+  transition: all 2s ease-in-out;
+}
